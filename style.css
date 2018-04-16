@@ -1,45 +1,74 @@
 
+div {
+  background-color: lightgray;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#a {
+  width: 480px;
+  height: 75px;
+  display: flex;
+}
+
+#b {
+  width: 480px;
+  height: 150px;
+  display: flex;
+}
+
+#pair > div {
+  width: 480px;
+  height: 125px;
+  display: flex;
+}
+
+#group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#group > div {
+  width: 240px;
+  height: 250px;
+  display: flex;
+}
+
+#i {
+  width: 480px;
+  height: 80px;
+  display: flex;
+}
 
 
-
-
-
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 768px) {
 
 main {
   width: 960px;
   margin: auto;
 }
 
-div {
-  background-color: grey;
-  border: 1px solid black;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-}
 
 #a {
-  background-color: red;
   width: 960px;
   height: 100px;
   display: flex;
-  order: 1;
 }
 
 #b {
   float:left;
-  background-color:blue;
   width: 200px;
   height: 600px;
   display: flex;
-  order: 2;
 }
 
 
 #pair > div {
   float: right;
-  background-color: green;
   width: 380px;
   height: 200px;
   display: flex;
@@ -52,7 +81,6 @@ div {
 
 #group > div {
   float: left;
-  background-color: purple;
   display: flex;
   flex-direction: row;
   width: 190px;
@@ -61,7 +89,6 @@ div {
 
 #i {
   float: right;
-  background-color: grey;
   display: flex;
   width: 760px;
   height: 150px;
@@ -69,24 +96,3 @@ div {
 
 }
 
-#c {
-  order: 3;
-}
-#d {  
-  order: 4;
-}
-#e {
-  order: 5;
-}
-#f {
-  order: 6;
-}
-#g {
-  order: 7;
-}
-#h {
-  order: 8;
-}
-#i {
-  order: 9;
-}
