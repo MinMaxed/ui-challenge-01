@@ -6,6 +6,7 @@ div {
   border: 1px solid black;
   box-sizing: border-box;
   text-align: center;
+  width: 100%;
   float: left;
   display: table;
 }
@@ -34,6 +35,10 @@ p {
 #group > div {
   width: 240px;
   height: 250px;
+}
+
+#e, #g {
+  clear: both;
 }
 
 #i {
@@ -77,6 +82,13 @@ main {
   height: 250px;
 }
 
+/* #d, #e, #g {
+  float: left;
+} */
+
+#e, #g {
+  clear: none;
+}
 #i {
   float: right;
   width: 760px;
